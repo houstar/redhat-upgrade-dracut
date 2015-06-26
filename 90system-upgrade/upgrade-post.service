@@ -2,7 +2,7 @@
 Description=System Upgrade (post)
 Documentation=man:upgrade-post.service(8)
 DefaultDependencies=no
-After=upgrade.target
+After=system-upgrade.target
 After=upgrade.service
 
 [Service]

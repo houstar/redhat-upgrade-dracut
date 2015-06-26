@@ -31,9 +31,9 @@ install() {
     unitdir="/etc/systemd/system"
 
     # Set up systemd target and units
-    upgrade_wantsdir="${initdir}${unitdir}/upgrade.target.wants"
+    upgrade_wantsdir="${initdir}${unitdir}/system-upgrade.target.wants"
 
-    inst_simple "$moddir/upgrade.target" "$unitdir/upgrade.target"
+    inst_simple "$moddir/system-upgrade.target" "$unitdir/system-upgrade.target"
 
     mkdir -p "$upgrade_wantsdir"
     for s in $upgrade_hooks; do

@@ -2,7 +2,7 @@
 Description=System Upgrade (pre)
 Documentation=man:upgrade-pre.service(8)
 DefaultDependencies=no
-After=upgrade.target plymouth-start.service
+After=system-upgrade.target plymouth-start.service
 Before=upgrade.service
 
 [Service]
